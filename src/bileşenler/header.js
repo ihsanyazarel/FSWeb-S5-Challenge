@@ -15,12 +15,12 @@ const Header = (baslik, tarih, yazi) => {
   headerDiv.classList.add("header");
   const dateSpan = document.createElement("span");
   dateSpan.classList.add("date");
-  dateSpan.textContent(tarih);
+  dateSpan.textContent = tarih;
   const h1 = document.createElement("h1");
-  h1.textContent(baslik);
+  h1.textContent = baslik;
   const tempSpan = document.createElement("span");
   tempSpan.classList.add("temp");
-  tempSpan.textContent(yazi);
+  tempSpan.textContent = yazi;
   headerDiv.append(dateSpan)
   headerDiv.append(h1)
   headerDiv.append(tempSpan)
